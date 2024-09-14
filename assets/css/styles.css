@@ -889,7 +889,7 @@ button,
 
 /* Chunks Styling */
 .chunks {
-  /* animation: travel 10s linear infinite; */
+  animation: travel 10s linear infinite;
   background: url("/899dda241eca5e959d9d945f45aba682.gif");;
   width: 100%;
   height: 100%;

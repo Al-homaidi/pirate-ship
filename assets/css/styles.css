@@ -136,7 +136,7 @@ img {
 
 .home__images div {
   max-width: initial;
-  /* width: 4002px; */
+  width: 4002px;
   position: absolute;
   left: 0;
 }

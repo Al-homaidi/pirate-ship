@@ -136,7 +136,7 @@ img {
 
 .home__images div {
   max-width: initial;
-  width: 4002px;
+  /* width: 4002px; */
   position: absolute;
   left: 0;
 }
@@ -889,8 +889,8 @@ button,
 
 /* Chunks Styling */
 .chunks {
-  animation: travel 10s linear infinite;
-  background: url("/water\ \(1\).webp") top left / var(--cell) var(--cell);
+  /* animation: travel 10s linear infinite; */
+  background: url("/899dda241eca5e959d9d945f45aba682.gif");;
   width: 100%;
   height: 100%;
 }

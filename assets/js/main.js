@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let stars = document.querySelector(".stars");
     let twinkling = document.querySelector(".twinkling");
-    let waves = document.querySelectorAll(".waves");
+
+    let Wav = document.querySelectorAll(".Wav");
+    let Wave3 = document.querySelector('.Wave3');
+    
     let home__ship = document.querySelector(".home__ship");
     let cloud1 = document.querySelector(".cloud1");
     let cloud2 = document.querySelector(".cloud2");
@@ -20,14 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
       twinkling.style.display = "block";
       cloud1.style.display = "none";
       cloud2.style.display = "none";
-      //   cloud3.style.display = "none";
+
       sun.style.display = "none";
       moon.style.display = "block";
 
-      waves.forEach((wave) => {
-        wave.style.filter = "brightness(0.7)";
-        wave.style.animationDuration = "10s";
+      Wav.forEach((Wav) => {
+        Wav.style.filter = "brightness(0.7)";
+        Wav.style.animationDuration = "10s";
       });
+
+      Wave3.style.filter = "brightness(0.7) opacity(1)";
 
       cloudimg.forEach((img) => {
         img.style.filter = "brightness(0.8)";
@@ -44,10 +49,12 @@ document.addEventListener("DOMContentLoaded", () => {
       sun.style.display = "block";
       moon.style.display = "none";
 
-      waves.forEach((wave) => {
-        wave.style.filter = "brightness(1)";
-        wave.style.animationDuration = "4s";
+      Wav.forEach((Wav) => {
+        Wav.style.filter = "brightness(1)";
+        Wav.style.animationDuration = "4s";
       });
+
+      Wave3.style.filter = "brightness(1) opacity(0.90)";
 
       cloudimg.forEach((img) => {
         img.style.filter = "brightness(1)";

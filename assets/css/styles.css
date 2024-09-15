@@ -142,7 +142,7 @@ img {
 }
 
 .home__ship {
-  width: 375px;
+  width: 40vw;
   position: absolute;
   bottom: 2rem;
   left: 0;
@@ -434,8 +434,6 @@ a:visited {
   pointer-events: none;
 }
 
-.cloud img.cloud3 {
-}
 @-webkit-keyframes animCloud {
   from {
     -webkit-transform: translateX(100%);
@@ -834,112 +832,126 @@ a:visited {
   }
 }
 
-:root {
-  --x: 5;
-  --y: 6;
-  --cell: 400px;
-  --xAngle: 87.5deg;
-  --transDur: 20s;
-  --maxRotate: 2turn;
-  --ocean-color: #1a75bb; /* لون البحر */
-}
-
-:root {
-  font-size: calc(36px + (48 - 36) * (100vw - 320px) / (1600 - 320));
-}
-
-.main1 {
-  height: 100vh !important;
-  margin: auto;
-  /* overflow: hidden; */
-  perspective: 800px;
+.Wave {
+  right: 0;
+  animation-name: swell;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  fill: #1a75bb;
   position: absolute;
-  max-width: 1600px !important;
-  bottom: -208px;
+  bottom: 80px;
   z-index: 99;
   filter: opacity(1) brightness(1.2);
 }
 
-.main2 {
-  height: 100vh !important;
-  margin: auto;
-  /* overflow: hidden; */
-  perspective: 800px;
+.Wave1 {
+  right: 0;
+  animation-name: swell;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  fill: #1a75bb;
   position: absolute;
-  max-width: 1600px !important;
-  bottom: -233px;
-  z-index: 999999;
-  filter: opacity(0.7) brightness(1.2);
+  bottom: -3px;
+  z-index: 99;
+  filter: opacity(1) brightness(1.2);
 }
-button,
-.compass,
-.ocean,
-.sky {
+
+.Wave2 {
+  right: 0;
+  animation-name: swell;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  fill: #286fcbf5;
   position: absolute;
-}
-button,
-.compass {
-  bottom: 0.75em;
-  z-index: 9;
-}
-.compass,
-.ocean {
-  transition: transform 60000s linear;
+  bottom: 68px;
+  z-index: 180;
+  filter: opacity(1) brightness(1.2);
+  transform: translateY(68px);
+  height: 20vh;
 }
 
-/* Chunks Styling */
-.chunks {
-  animation: travel 10s linear infinite;
-  background: url("/899dda241eca5e959d9d945f45aba682.gif");;
-  width: 100%;
-  height: 100%;
+.Wave3 {
+  right: 0;
+  animation-name: swell;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  fill: #1a75bb;
+  position: absolute;
+  bottom: -30px;
+  z-index: 9999;
+  filter: opacity(0.9) brightness(1.2);
 }
 
-/* Keyframes Animation - From right to left */
-@keyframes travel {
-  from {
-    transform: translateX(var(--cell));
+@media (max-width: 2600px) {
+  .Wave3 {
+    /* bottom: 1.rem; */
   }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.ocean {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateX(var(--xAngle)) rotateZ(0deg);
-  width: calc(var(--cell) * var(--x));
-  height: calc(var(--cell) * var(--y));
-}
-
-@media (max-width: 767px) {
   .home__ship {
-    bottom: 2.2rem;
+    width: 30vw;
+    bottom: 4rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1667px) {
+  .Wave3 {
+    /* bottom: 1.rem; */
+  }
   .home__ship {
-    bottom: 2.3rem;
+    width: 30vw;
+    bottom: 16rem;
   }
 }
 
-
-@media (max-width: 467px) {
+@media (max-width: 1660px) {
+  .Wave3 {
+    bottom: 38px;
+  }
   .home__ship {
+    width: 32vw;
+    bottom: 7.2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Wave3 {
+    bottom: 38px;
+  }
+  .home__ship {
+    width: 31vw;
+    bottom: 6.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Wave3 {
+    bottom: 38px;
+  }
+  .home__ship {
+    width: 31vw;
+    bottom: 5.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Wave3 {
+    bottom: 38px;
+  }
+  .home__ship {
+    width: 50vw;
     bottom: 5rem;
   }
 }
 
-@media (max-width: 379px) {
-  .home__ship {
-    bottom: 2.7rem;
+@media (max-width: 767px) {
+  .Wave3 {
+    bottom: 38px;
   }
-}
-
-@media (max-width: 217px) {
   .home__ship {
-    bottom: 2.8rem;
+    width: 71vw;
+    bottom: 3.2rem;
   }
 }
